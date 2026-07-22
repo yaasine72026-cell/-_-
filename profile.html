@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ملفي الجمالي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>ملفي الجمالي ✨</h1>
+
+<h2 id="username"></h2>
+
+<p>نوع البشرة:</p>
+
+<select id="skin">
+<option>دهنية</option>
+<option>جافة</option>
+<option>مختلطة</option>
+<option>عادية</option>
+</select>
+
+<p>ستايل المكياج المفضل:</p>
+
+<select>
+<option>ناعم 🌸</option>
+<option>سهرة ✨</option>
+<option>عروس 👰</option>
+<option>جريء 💄</option>
+</select>
+
+<br><br>
+
+<button onclick="saveProfile()">حفظ</button>
+
+<p id="saved"></p>
+
+</div>
+
+
+<script>
+
+document.getElementById("username").innerHTML=
+"مرحبًا "+localStorage.getItem("username")+" 💕";
+
+
+function saveProfile(){
+
+document.getElementById("saved").innerHTML=
+"تم حفظ ملفك الجمالي ✨";
+
+}
+
+</script>
+
+</body>
+
+</html>

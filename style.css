@@ -1,0 +1,208 @@
+body{
+font-family: "Tahoma", sans-serif;
+background: linear-gradient(135deg,#fff0f5,#ffe4ec);
+margin:0;
+text-align:center;
+color:#333;
+}
+
+/* رأس التطبيق */
+header{
+background:linear-gradient(90deg,#111,#3a1c2c);
+color:#ffd700;
+padding:30px 15px;
+box-shadow:0 5px 15px #ccc;
+}
+
+header h1{
+font-size:30px;
+margin:10px;
+}
+
+header p{
+color:white;
+font-size:18px;
+}
+
+
+/* الأزرار */
+button{
+background:linear-gradient(45deg,#d63384,#ff69b4);
+color:white;
+border:none;
+padding:13px 30px;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+margin:10px;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+
+/* الأقسام */
+.hero{
+padding:50px 20px;
+background:white;
+border-radius:0 0 40px 40px;
+}
+
+.hero h2{
+color:#d63384;
+}
+
+
+/* بطاقات المنتجات */
+.card{
+background:white;
+margin:20px auto;
+padding:25px;
+width:80%;
+max-width:350px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+
+/* صفحات الدخول والتسجيل */
+.login-box{
+
+background:white;
+width:85%;
+max-width:400px;
+margin:50px auto;
+padding:35px;
+border-radius:30px;
+box-shadow:0 10px 30px #ddd;
+
+}
+
+
+.login-box h1{
+color:#d63384;
+font-size:24px;
+}
+
+
+input,select{
+
+width:80%;
+padding:15px;
+margin:10px;
+border-radius:25px;
+border:1px solid #ddd;
+font-size:15px;
+
+}
+
+
+/* قسم الذكاء الاصطناعي */
+.ai{
+
+background:white;
+margin:25px;
+padding:30px;
+border-radius:30px;
+
+}
+
+
+/* الفوتر */
+footer{
+
+background:#111;
+color:white;
+padding:20px;
+margin-top:30px;
+
+}
+
+
+/* نجوم التقييم */
+.stars{
+
+color:#ffd700;
+font-size:25px;
+
+}
+
+
+/* حركة ظهور */
+.card,.login-box,.hero{
+
+animation:show 0.7s ease;
+
+}
+
+@keyframes show{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}.splash{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#111,#d63384);
+color:#ffd700;
+
+}
+
+
+.logo{
+
+text-align:center;
+animation:zoom 2s;
+
+}
+
+
+.logo h1{
+
+font-size:32px;
+
+}
+
+
+.logo p{
+
+color:white;
+font-size:20px;
+
+}
+
+
+@keyframes zoom{
+
+from{
+
+transform:scale(0.5);
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+opacity:1;
+
+}
+
+}

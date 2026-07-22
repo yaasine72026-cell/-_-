@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معنا</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header>
+<h1>تواصل معنا 💌</h1>
+</header>
+
+
+<div class="login-box">
+
+<h2>نحن هنا لمساعدتك 🌸</h2>
+
+
+<input placeholder="الاسم">
+
+<input placeholder="البريد الإلكتروني">
+
+
+<textarea placeholder="اكتبي رسالتك"
+style="width:80%;height:120px;border-radius:20px;padding:15px;">
+</textarea>
+
+
+<br>
+
+<button onclick="sendMessage()">
+إرسال الرسالة
+</button>
+
+
+<p id="sent"></p>
+
+
+</div>
+
+
+<script>
+
+function sendMessage(){
+
+document.getElementById("sent").innerHTML=
+"تم إرسال رسالتك بنجاح 💕 سنرد عليك قريبًا.";
+
+}
+
+</script>
+
+
+<a href="index.html">
+<button>العودة للرئيسية</button>
+</a>
+
+
+</body>
+
+</html>
